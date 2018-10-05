@@ -1,0 +1,84 @@
+*** Targets ***
+probe = FPing
+menu = Top
+title = SuperNanny Network Stats
+remark = Welcome to the SmokePing website of SuperNanny.
+
++ blocked_websites
+menu = Blocked Websites 
+title = Blocked Websites
+
+++ GoogleHTTPS
+probe = EchoPingHttps
+menu = Google HTTPS
+title = Google HTTPS
+host = www.google.com
+url = /search
+
+++ GoogleDocsHTTPS
+probe = EchoPingHttps
+menu = Google Docs HTTPS
+title = Google Docs HTTPS
+host = docs.google.com
+
+++ FacebookHTTPS
+probe = EchoPingHttps
+menu = Facebook HTTPS
+title = Facebook HTTPS
+host = www.facebook.com
+
+#++ FacebookHTTPS10
+#probe = EchoPingHttps
+#menu = Facebook HTTPS 10
+#title = Facebook HTTPS 10
+#host = www.facebook.com
+#pings = 10
+
+++ YoutubeHTTPS
+probe = EchoPingHttps
+menu = Youtube HTTPS
+title = Youtube HTTPS
+host = www.youtube.com
+
+#++ YoutubeHTTPS10
+#probe = EchoPingHttps
+#menu = Youtube HTTPS 10
+#title = Youtube HTTPS 10
+#host = www.youtube.com
+#pings = 10
+
++ Internet
+probe = FPing
+title = Internet
+menu = Internet
+
+++ GoogleDNS
+probe = FPing
+menu = Google DNS ICMP
+title = Google DNS ICMP
+host = 8.8.8.8
+
+++ Gitlab
+probe = FPing
+menu = Gitlab ICMP
+title = Gitlab ICMP
+host = gitlab.com
+
+++ Github
+probe = FPing
+menu = Github ICMP
+title= Github ICMP
+host = github.com
+
+++ Pypi
+probe = FPing
+menu = Pypi ICMP
+title = Pypi ICMP
+host = www.pypi.org
+
+++ Slack
+probe = FPing
+menu = Slack ICMP
+title = Slack ICMP
+host = www.slack.com
+
